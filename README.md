@@ -221,6 +221,36 @@ const microBatcher = new YaMicroBatcher(config);
 await microBatcher.submit({ data: "example job" });
 ```
 
+Here is the markdown segment to add to your README.md under a "Future Enhancements" or "TODO" section:
+
+## TODO / Future Enhancements
+
+- [ ] **Error Handling and Retry Mechanism**
+  - Implement a retry mechanism for failed jobs with configurable retry count and delay.
+  - Support exponential backoff for retry delays.
+  - Allow custom error handling logic to manage specific error scenarios.
+
+- [ ] **Concurrency Control** ???
+  - Add support for processing jobs concurrently with a configurable maximum number of concurrent jobs.
+  - Introduce job prioritization to process higher-priority jobs first.
+  - Optionally implement throttling to limit the number of jobs processed per unit time.
+
+- [ ] **Job Persistence**
+  - Provide a persistence layer to save jobs to a database or file system for recovery after a system crash.
+  - Implement job recovery on startup to re-queue pending or in-progress jobs.
+
+- [ ] **Job Monitoring and Metrics**
+  - Introduce real-time metrics on job counts, memory usage, processing times, and success/failure rates.
+  - Implement health checks to monitor the micro-batcher's performance and alert users if issues arise.
+  - Add detailed logging with support for different log levels (info, debug, error).
+
+- [ ] **Customizable Batch Processing Strategies**
+  - Allow users to define custom strategies for how jobs are grouped into batches.
+  - Support conditional batching based on custom criteria (e.g., job type, priority).
+  - Implement adaptive batching logic to dynamically adjust batch size and processing intervals based on system load.
+
+Feel free to contribute to these features or suggest new ones by submitting a pull request or opening an issue.
+
 ## License
 
 MIT License.
