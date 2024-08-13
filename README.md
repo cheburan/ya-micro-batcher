@@ -221,8 +221,6 @@ const microBatcher = new YaMicroBatcher(config);
 await microBatcher.submit({ data: "example job" });
 ```
 
-Here is the markdown segment to add to your README.md under a "Future Enhancements" or "TODO" section:
-
 ## TODO / Future Enhancements
 
 - [ ] **Error Handling and Retry Mechanism**
@@ -249,8 +247,9 @@ Here is the markdown segment to add to your README.md under a "Future Enhancemen
   - Support conditional batching based on custom criteria (e.g., job type, priority).
   - Implement adaptive batching logic to dynamically adjust batch size and processing intervals based on system load.
 
-Feel free to contribute to these features or suggest new ones by submitting a pull request or opening an issue.
-
 ## License
 
 MIT License.
+
+## Contribution
+Feel free to contribute to these features or suggest new ones by submitting a pull request or opening an issue.
