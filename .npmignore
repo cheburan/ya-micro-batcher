@@ -1,0 +1,19 @@
+# Ignore test files
+test/
+__tests__/
+*.spec.js
+*.test.ts
+*.test.js
+
+# Ignore local environment files
+.env
+.vscode/
+
+# Ignore other non-essential files
+.git/
+.github/
+.editorconfig
+.eslintrc.js
+.DS_Store
+
+src
